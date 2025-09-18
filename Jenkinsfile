@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/mahmadg/jenkins-project.git'
+                git branch: 'dmz_web', url: 'https://github.com/mahmadg/jenkins-project.git'
             }
         }
         stage('Build') {
@@ -33,6 +33,7 @@ pipeline {
         }
     }
 }
+
 
 
 
