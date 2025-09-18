@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/nazishanwar1/my-webapp.git'
+                git branch: 'main', url: 'https://github.com/mahmadg/jenkins-project.git'
             }
         }
         stage('Build') {
@@ -34,3 +34,4 @@ pipeline {
         }
     }
 }
+
