@@ -1,5 +1,3 @@
-#bash
-
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="3.1">
   <servlet>
     <servlet-name>HelloServlet</servlet-name>
@@ -11,3 +9,4 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>
+
