@@ -22,16 +22,17 @@ pipeline {
             steps {
                 deploy adapters: [
                     tomcat9(
-            credentialsId: 'f5e0bf33-60ac-4ca2-a373-1cc0616a3a6b', 
+            credentialsId: 'ad616399-3268-4ec7-84e7-4cd4e00b6e29', 
                         path: '', 
-                        url: 'http://192.168.100.103:8080')
+                        url: 'http://192.168.1.201:8080')
         ], contextPath: 'my-webapp', war: 'target/my-webapp.war'}
         }
     }
     post {
         success {
-            echo "Deployed! Access: http://<server-ip>:8080/${APP_NAME}"
+            echo "Deployed! Access: http://192.168.1.201:8080/${my_webapp}"
         }
     }
 }
+
 
