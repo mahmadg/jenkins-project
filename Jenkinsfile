@@ -29,10 +29,11 @@ pipeline {
     }
     post {
         success {
-            echo "Deployed! Access: http://192.168.1.201:8080/${my-webapp}"
+            echo "Deployed! Access: http://192.168.1.201:8080/${APP_NAME}"
         }
     }
 }
+
 
 
 
